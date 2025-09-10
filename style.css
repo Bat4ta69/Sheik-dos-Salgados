@@ -1,0 +1,349 @@
+:root {
+    --primary-color: #b27842;
+    --secondary-color: #ffd080;
+    --background-color: #ffcc564e;
+    --text-color: #ffffff;
+    --border: 0.1rem solid rgba(255, 241, 160, 0.966);
+    font-size: 10px;
+    --btnc: #fbe698;
+    --btnbg: #ffba51;
+    --btntr: #884600;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Source Serif 4", serif;
+}
+
+body{
+    background: var(--background-color);
+}
+
+.logo{
+    width: 12rem;
+    margin-left: 1rem;
+    border-radius: 3rem;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+header{
+   position: fixed;
+   top: 0; left: 0; right: 0;
+    z-index: 99;
+    background-color: var(--primary-color);
+    border-bottom: var(--border);
+}
+
+section {
+    width: 100%;
+    padding: 3rem 0rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    }
+
+header section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+}
+
+.navbar{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* permite quebrar linhas */
+    justify-content:center; /* centraliza na linha */
+}
+
+.navbar a{
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+
+}
+
+
+
+.navbar a:hover{
+    color: var(--secondary-color);
+    border-bottom: 0.2rem solid var(--secondary-color);
+    padding-bottom: 0.2rem;
+    font-size: 2rem;
+}
+
+.icon {
+    width: 3.5rem;
+    margin: 1rem;
+}
+
+.icon:hover {
+    width: 4rem;
+}
+
+.btn{
+    padding: 0.8rem 2rem;
+    background-color: var(--btnbg);
+    color: var(--text-color);
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.btn:hover{
+    background-color: var(--btntr);
+    color: var(--btnc);
+    font-size: 1.9rem;
+}
+
+.home-container{
+   background: url(./img/salgadinhos3.jpg) no-repeat;
+   
+   background-position: center;
+   background-size:cover;
+}
+
+.home-container section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    max-width: 60rem;
+}
+
+.content h3{
+    font-size: 6rem;
+    color: rgb(233, 167, 96);
+    text-shadow: 0.3rem 0.3rem 0.3rem rgba(62, 33, 1, 0.632);
+}
+
+.content p {
+    font-size: 1.8rem;
+    color: rgb(228, 228, 228);
+    margin: 2rem 0;
+    line-height: 2.5rem;
+    font-weight: 600;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(75, 75, 75, 0.617);
+}
+
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 4rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(75, 75, 75, 0.617);
+}
+
+.title span{
+    color: rgb(236, 167, 93);
+    text-transform: uppercase;
+}
+
+.container-image img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.about .row {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--primary-color);
+}
+
+.about .row .content{
+  padding: 2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: var(--text-color);
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    padding: 1rem 0;
+    line-height: 2.2rem;
+    font-weight: 600;
+}
+
+.imgmenu{
+    width: 100%;
+    max-height: 20rem;
+    min-height: 20rem;
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+}
+
+.menu .box-container .box{
+text-align: center;
+border: var(--border);
+padding: 1rem 1rem 2.4rem 1rem;
+background-color: var(--primary-color);
+cursor: pointer;
+}
+
+.menu .box-container .box h3{
+    font-size: 2.2rem;
+    color: var(--text-color);
+    margin: 0rem 0;
+}
+
+.menu .box-container .box p{
+    color: var(--text-color);
+    padding: 0rem 1rem;
+font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.menu .box-container .box:hover{
+    background-color: var(--btntr);
+    margin: -0.2rem -0.08rem;
+}
+
+.contacts .row{
+    display: flex;
+    gap: 2rem;
+    background-color: var(--primary-color);
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100rem;
+    min-width: 30rem;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.contacts .row .content h3{
+    font-size: 3rem;
+    color: var(--text-color);
+}
+
+.contacts .row .content p{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    padding: 1rem 0;
+    line-height: 2.2rem;
+    font-weight: 600;
+}
+
+.contacts .row .content .contacts-icons{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 1rem;
+    padding: 1rem 0;
+}
+
+.contacts .row .content .contacts-icons .icon{
+   background-color: var(--btnbg);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.contacts .row .content .contacts-icons .icon:hover{
+    width: 5.5rem;
+    background-color: var(--btntr);
+}
+
+.address .row {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--primary-color);
+}
+
+.address .row .content{
+  padding: 2rem;
+}
+
+.address .row .content h3{
+    font-size: 3rem;
+    color: var(--text-color);
+}
+
+.address .row .content p{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    padding: 1rem 0;
+    line-height: 2.2rem;
+    font-weight: 600;
+}
+
+.map{
+   padding: 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 3rem 2rem;
+    text-align: center;
+    border-top: var(--border);
+    margin-top: 4rem;
+}
+
+footer h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+footer p {
+    font-size: 1.6rem;
+    margin: 0.5rem 0;
+}
+
+.footer-contacts {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-contacts a {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    text-decoration: none;
+    border-bottom: 0.1rem solid transparent;
+    transition: 0.3s;
+}
+
+.footer-contacts a:hover {
+    color: var(--secondary-color);
+    border-bottom: 0.1rem solid var(--secondary-color);
+}
+
+footer .copyright {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    opacity: 0.8;
+}
