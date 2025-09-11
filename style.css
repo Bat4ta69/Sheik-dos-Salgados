@@ -269,7 +269,7 @@ font-size: 1.4rem;
 }
 
 .contacts .row .content .contacts-icons .icon:hover{
-    width: 4rem;
+    width: 2.5rem;
     background-color: var(--btntr);
 }
 
@@ -347,4 +347,5 @@ footer .copyright {
     font-size: 1.4rem;
     opacity: 0.8;
 }
+
 
