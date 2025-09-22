@@ -114,6 +114,7 @@ header section{
    
    background-position: center;
    background-size:cover;
+   padding: 2rem;
 }
 
 .home-container section{
@@ -195,17 +196,21 @@ header section{
     min-height: 20rem;
 }
 
+
+
 .menu .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 2rem;
+    background-color: var(--primary-color);
+    padding: 2rem;
 }
 
 .menu .box-container .box{
 text-align: center;
-border: var(--border);
+
 padding: 1rem 1rem 2.4rem 1rem;
-background-color: var(--primary-color);
+background-color: var(--btnbg);
 cursor: pointer;
 }
 
@@ -269,7 +274,7 @@ font-size: 1.4rem;
 }
 
 .contacts .row .content .contacts-icons .icon:hover{
-    width: 2.5rem;
+    width: 5.5rem;
     background-color: var(--btntr);
 }
 
@@ -347,5 +352,3 @@ footer .copyright {
     font-size: 1.4rem;
     opacity: 0.8;
 }
-
-
