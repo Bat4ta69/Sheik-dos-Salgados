@@ -60,12 +60,59 @@ header section{
 
 }
 
-.navbar{
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap; /* permite quebrar linhas */
-    justify-content:center; /* centraliza na linha */
+/* Esconde o hambúrguer em telas grandes */
+.hamburger {
+    font-size: 3rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none; /* só aparece em telas pequenas */
 }
+
+/* Navbar padrão em telas grandes */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* 🔥 Telas menores */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block; /* mostra o menu */
+    }
+
+    .navbar {
+        display: none; /* esconde o menu */
+        flex-direction: column;
+        background-color: var(--primary-color);
+        width: 100%;
+        position: absolute;
+        top: 100%; /* logo abaixo do header */
+        left: 0;
+        border-top: var(--border);
+        padding: 1rem 0;
+    }
+
+    .navbar a {
+        margin: 1rem 0;
+        font-size: 2rem;
+        text-align: center;
+        display: block;
+    }
+
+    /* Quando ativado */
+    .navbar.active {
+        display: flex;
+    }
+}
+
+.buttonstop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .navbar a{
     margin: 0 1rem;
@@ -208,7 +255,7 @@ header section{
 
 @media (max-width: 768px) {
     .menu .box-container {
-        grid-template-columns: repeat(2, 2fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -358,4 +405,3 @@ footer .copyright {
     font-size: 1.4rem;
     opacity: 0.8;
 }
-
