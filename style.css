@@ -111,6 +111,7 @@ header section{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
 }
 
 
@@ -405,3 +406,4 @@ footer .copyright {
     font-size: 1.4rem;
     opacity: 0.8;
 }
+
