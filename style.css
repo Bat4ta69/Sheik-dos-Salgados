@@ -200,7 +200,7 @@ header section{
 
 .menu .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     gap: 2rem;
     background-color: var(--primary-color);
     padding: 2rem;
@@ -229,7 +229,7 @@ font-size: 1.4rem;
 
 .menu .box-container .box:hover{
     background-color: var(--btntr);
-    margin: -0.2rem -0.08rem;
+    margin: -0.2rem;
 }
 
 .contacts .row{
