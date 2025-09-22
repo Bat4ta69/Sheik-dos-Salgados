@@ -200,10 +200,16 @@ header section{
 
 .menu .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
     gap: 2rem;
     background-color: var(--primary-color);
     padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    .menu .box-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .menu .box-container .box{
